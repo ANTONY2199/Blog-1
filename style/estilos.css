@@ -1,0 +1,56 @@
+#cajas .option {
+
+}
+
+#cajas .option figure {
+	margin: 0;
+	
+}
+
+
+#cajas .option img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+#cajas .option h2 {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -215px;
+	text-align: center;
+	color: white;	
+	font-family: Calibri;
+	font-size: 35px;
+}
+
+#cajas .option p {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	top: -205px;
+	text-align: center;
+	color: white;	
+	font-family: Calibri;
+	font-size: 18px;
+	width: 400px;
+	
+}
+
+#cajas .option button {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: -180px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+	font-family: Calibri;
+	font-size: 18px;
+	color: white;
+	background-color: rgba(255,255,255, 0.1);
+	cursor: pointer;
+}
