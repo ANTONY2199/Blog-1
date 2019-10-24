@@ -1,3 +1,139 @@
+body {
+	margin: 0;
+}
+
+/*index*/
+#nav {
+	height: 40px;
+	width: 96%;
+	padding: 20px 2%;
+}
+
+#brand img{
+	width: 200px;
+	height: 70px;
+}
+
+#mobile {
+	width: 50px;
+	height: 50px;
+	margin-top: -40px;
+	float: right;
+	cursor: pointer;
+}
+
+#mobile span {
+	position: relative;
+	top: -20px;
+	display: block;
+	margin: 6px 0;
+	border-radius: 5px;
+	height: 7px;
+	width: 100%;
+	background: silver;
+}
+
+.nav-mobile {
+	display: none;
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	background: white;
+}
+.nav-mobile ul li{
+	list-style: none;
+}
+.nav-mobile ul li a {
+	display: block;
+	padding: 10px 0;
+	color: black;
+	text-decoration: none;
+}
+.nav-mobile ul li a:hover {
+	color: #48D7B7;
+}
+
+#nav ul{
+	display: none;
+}
+
+/*texto*/
+
+#parra {
+	background: silver;
+	width: 100%;
+	margin-top: 35px; 
+	padding: 15px 0px;
+	
+}
+
+#parra p {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0px;
+	font-family: calibri;
+	width: 80%;
+
+}
+
+#parra img {
+	display: block;
+	margin: 0 auto;
+}
+#logos {
+	display: flex;
+	justify-content: center;
+}
+#logos .logo img {
+	width: 40px;
+	height: 40px;
+	padding-bottom: 5px;
+	margin: 5px;
+
+
+}
+
+/*lugares*/
+
+#lugares {
+	width: 100%;
+	margin: 20px 0px;
+	position: relative;
+	top: 20px;
+    
+}
+
+#lugares figure {
+	margin: 0;
+	
+}
+
+#lugares figure .nombre {
+	background: rgba(49, 49, 49, 0.6);
+	color: white;
+	padding: 8px 0px;
+	font-size: 12px;
+	position: relative;
+	top: -40px;
+	font-family: Calibri;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+
+#lugares img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding-right: 0;
+	cursor: pointer;
+}
+
+/*segundo*/
+
 #cajas .option {
 
 }

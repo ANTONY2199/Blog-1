@@ -6,39 +6,69 @@
 	<link rel="stylesheet" type="text/css" href="style/estilos.css">
 </head>
 <body>
-	<section id="cajas">
-		<article class="option">
-			<figure>
-				<img class="foto" src="img/hotel.jpg" width="300px" height="600px" >
-				<h2>Hoteles</h2>
-				<p>
-					Aquí encontrarás toda la información de hoteles que hay en el lugar, te mostraremos los precios así como sus características y tambíen opiniones y comentarios.
-				</p>
-				<button type="submit">Visitar</button>
-			</figure>
-		</article>
-		<article class="option">
-			<figure>
-				<img class="foto" src="img/res1.jpg" width="300px" height="600px" >
-				<h2>Gastronomía</h2>
-				<p>
-					Aquí encontrarás toda la información de lugares para comer, te mostraremos los precios así como sus características y tambíen opiniones y comentarios de la comida.
-				</p>
-				<button type="submit">Visitar</button>
-			</figure>
-		</article>
-		<article class="option">
-			<figure>
-				<img class="foto" src="img/ruta.jpg" width="300px" height="600px" >
-				<h2>Rutas</h2>
-				<p>
-					Aquí encontrarás toda la información de las rutas para poder llegar a tu destino, te aconsejaremos con nuestras opiniones y comentarios.
-				</p>
-				<button type="submit">Visitar</button>
-			</figure>
-		</article>
-
-		
+	<div id="nav-mobile" class="nav-mobile">
+		<ul>
+			<li><a href="/">Inicio</a></li>
+			<li><a href="/about">Acerca de nosotros</a></li>
+			<li><a href="/#contact">Contáctanos</a></li>
+		</ul>
+	</div>
+    <header id="nav">
+		<div id="brand">
+			<img src="img/logotravel.png">
+		</div>
+		<ul>
+			<li><a href="/">Inicio</a></li>
+			<li><a href="/about">Acerca de nosotros</a></li>
+			<li><a href="/#contact">Contáctanos</a></li>
+		</ul>
+		<div id="mobile" onclick="navEffect()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</header>
+	<section id="parra">
+		<div>
+			<p>
+				Somos Travel Lovers y aquí encontrarás todo acerca de distintos lugares para viajar, también encontrarás experiencias de otras personas y recomendaciones para que tu viaje sea inolvidable.
+			</p>
+		</div>
+		<div id="logos">
+			<div class="logo">
+				<img src="img/facebook.png">
+		    </div>
+		    <div class="logo">
+				<img src="img/instagram.png">
+		    </div>
+		</div>
 	</section>
+	<section id="lugares">
+		<a href="segundo.html">
+			<figure>
+				<img src="img/lima1.jpg">
+				<div class="nombre">
+					Lima
+				</div>
+			</figure>
+		</a>
+		<a href="segundo.html">
+			<figure>
+				<img src="img/loreto.jpg">
+				<div class="nombre">
+					Loreto
+				</div>
+			</figure>
+		</a>
+		<a href="segundo.html">
+			<figure>
+				<img src="img/cusco.jpg">
+				<div class="nombre">
+					Cusco
+				</div>
+			</figure>
+		</a>
+	</section>
+	<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
