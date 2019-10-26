@@ -400,6 +400,107 @@ body {
 	}
 
 }
+/*HECHO POR ANTONY*/
+body {/**** Cuerpo principal ****/
+    background: rgb(34, 46, 45);
+}
+#encabezado {
+    height: 40px;
+	width: 96%;
+    padding: 20px 2%;
+    background: rgb(40, 46, 38);
+}
+#brand {/*Caja de la imagen*/
+    float: left;
+}
+#logo {/*id de la imagen del logo*/
+    height: 90%;
+    width: 150px;
+    margin-top: -8px;
 
-	
+}
+#buscYMenu {/*Aqui esta el buscador y el menu*/
+    float: right;
+    width: 70%;
+    height: 90%;
+}
+.bym {/*clase-para el margen del menu y buscador*/
+    margin: 4px;
+    float: left;
+}
+#miBusqueda {
+    background: #315e33;
+    height: 100%;
+    text-align: center;
+    width: 50%;
+}
+/*#boton {
+    background: #151515;
+    height: 100%;
+    width: 10%;
+    margin-top: -8px;
+
+}*/
+#menu {/*Aqui se diseña solo el menu*/
+	width: 50px;
+	height: 100%;
+	margin-top: -8px;
+	float: right;
+	cursor: pointer;
+}
+#menu span {/*Lineas en el menu*/
+	display: block;
+	margin: 6px 0;
+	border-radius: 5px;
+	height: 7px;
+	width: 100%;
+	background: rgb(94, 17, 15);
+}
+/*Aqui el menu deslizante*/
+.men-mobile {
+	display: none;
+	width: 20%;
+	height: 100%;
+	position: fixed;
+	background: rgb(142, 215, 248);
+}
+.men-mobile ul li{
+	list-style: none;
+}
+.men-mobile ul li a {
+	display: block;
+	padding: 10px 0;
+	color: rgb(94, 22, 22);
+	text-decoration: none;
+}
+.men-mobile ul li a:hover {
+	color: rgb(35, 68, 64);
+}
+/*CONTENIDO*/
+#contenido {
+    width: 100%;
+    height: 300px; 
+}
+/*REDES SOCIALES*/
+#redes {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+#redes div {
+    float: left;
+    margin: 0 auto;
+    display: block;
+}
+#face {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+#ins {
+    display: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}	
 
