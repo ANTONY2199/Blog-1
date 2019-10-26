@@ -50,7 +50,8 @@ body {
 	text-decoration: none;
 }
 .nav-mobile ul li a:hover {
-	color: #48D7B7;
+	
+	color: silver;
 }
 
 #nav ul{
@@ -132,6 +133,42 @@ body {
 	cursor: pointer;
 }
 
+#lugares1 {
+	width: 100%;
+	margin: 20px 0px;
+	position: relative;
+	top: 20px;
+    
+}
+
+#lugares1 figure {
+	margin: 0;
+	
+}
+
+#lugares1 figure .nombre {
+	background: rgba(49, 49, 49, 0.6);
+	color: white;
+	padding: 8px 0px;
+	font-size: 12px;
+	position: relative;
+	top: -40px;
+	font-family: Calibri;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+
+#lugares1 img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding-right: 0;
+	cursor: pointer;
+}
+
 /*segundo*/
 
 #cajas .option {
@@ -190,3 +227,179 @@ body {
 	background-color: rgba(255,255,255, 0.1);
 	cursor: pointer;
 }
+
+@media screen and (min-width:800px) {
+
+	#mobile {
+		display: none;
+	}
+
+	#brand {
+		float: left;
+	}
+
+	#nav {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#nav ul{
+		display: flex;
+		float: right;
+		width: 70%;
+		position: relative;
+		margin: 0;
+		margin-top: 15px;
+		margin-left: 250px;
+
+	}
+	#nav ul li{
+		flex: 1;
+		list-style: none;
+		display: block;
+		margin: 0 auto;
+	}
+	#nav ul li a{ 
+		
+		text-decoration: none;
+		color: silver;
+		font-family: Calibri;
+		font-size: 18px;
+	}
+	#nav ul li a p { 
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+
+	#parra {
+		display: flex;
+		flex-direction: row;
+		background: silver;
+		width: 100%;
+		margin-top: 35px; 
+		padding: 15px 0px;
+	
+	}
+
+	#parra p {
+		
+		text-align: left;
+		padding: 10px 0px;
+		font-family: calibri;
+		width: 60%;
+		margin-left: 40px;
+
+	}
+
+	#parra img {
+		display: block;
+		margin: 0 auto;
+	}
+	#logos {
+		display: flex;
+		justify-content: center;
+	}
+	#logos .logo img {
+		width: 40px;
+		height: 40px;
+		padding-right: 10px;
+		margin: 20px;
+	}
+
+@media screen and (min-width:500px){
+	
+	#lugares1 {
+		display: flex;
+		align-items: flex-end;
+		padding: 0 4px;
+		position: relative;
+		top: -160px;
+		
+	}
+
+	#lugares1 figure {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+
+
+
+	#lugares1 img {
+		margin-top: 8px;
+        vertical-align: middle;
+	}
+
+	#lugares1 img.lamba {
+		flex-grow: 3.5;
+		
+	}
+
+
+
+	#lugares1 img.ica {
+		flex-grow: 3;
+		
+	}
+
+	#lugares1 img.arequipa1 {
+		flex-grow: 3.5;
+
+	}
+
+
+	#lugares {
+		display: flex;
+		align-items: stretch;
+		padding: 0 4px;
+
+		
+	}
+
+	#lugares figure {
+		display: block;
+		margin: 0 auto;
+		width: 100%
+		
+	}
+
+	#lugares img {
+		margin-top: 8px;
+        vertical-align: middle;
+	}
+
+	#lugares img.lima {
+		flex-grow: 3.5;
+		
+	}
+
+
+
+	#lugares img.loreto {
+		flex-grow: 3;
+		
+	}
+
+	#lugares img.cusco {
+		flex-grow: 3.5;
+
+	}
+
+	/*segundo*/ 
+
+	#cajas {
+		display: flex;
+		align-items: stretch;
+	}
+
+	#cajas .option  {
+		width: 34%;
+	}
+
+}
+
+	
+
