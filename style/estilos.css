@@ -172,12 +172,12 @@ body {
 /*segundo*/
 
 #cajas .option {
-
+	height: 600px;
 }
 
 #cajas .option figure {
 	margin: 0;
-	
+	height: 600px;
 }
 
 
@@ -391,7 +391,7 @@ body {
 	/*segundo*/ 
 
 	#cajas {
-		display: flex;
+		display: inline-flex;
 		align-items: stretch;
 	}
 
@@ -405,7 +405,7 @@ body {/**** Cuerpo principal ****/
     background: rgb(34, 46, 45);
 }
 #encabezado {
-    height: 40px;
+    height: 20px;
 	width: 96%;
     padding: 20px 2%;
     background: rgb(40, 46, 38);
