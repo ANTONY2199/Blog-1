@@ -454,7 +454,7 @@ body {/**** Cuerpo principal ****/
 	border-radius: 5px;
 	height: 7px;
 	width: 100%;
-	background: rgb(94, 17, 15);
+	background: yellowgreen;
 }
 /*Aqui el menu deslizante*/
 .men-mobile {
@@ -485,12 +485,8 @@ body {/**** Cuerpo principal ****/
 #redes {
     width: 100%;
     height: 50px;
-    margin: 0 auto;
-}
-#redes div {
-    float: left;
-    margin: 0 auto;
-    display: block;
+	margin: 0 auto;
+	display: center;
 }
 #face {
     cursor: pointer;
@@ -498,7 +494,6 @@ body {/**** Cuerpo principal ****/
     margin: 0 auto;
 }
 #ins {
-    display: none;
     cursor: pointer;
     display: block;
     margin: 0 auto;
