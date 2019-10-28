@@ -9,6 +9,11 @@ body {
 	padding: 20px 2%;
 }
 
+.center-block {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 #brand img{
 	width: 200px;
 	height: 70px;
@@ -69,8 +74,6 @@ body {
 }
 
 #parra p {
-	display: block;
-	margin: 0 auto;
 	text-align: center;
 	padding: 10px 0px;
 	font-family: calibri;
@@ -104,6 +107,7 @@ body {
 	top: 20px;
     
 }
+
 
 #lugares figure {
 	margin: 0;
@@ -274,13 +278,17 @@ body {
 	}
 
 	#parra {
-		display: flex;
-		flex-direction: row;
 		background: silver;
 		width: 100%;
 		margin-top: 35px; 
 		padding: 15px 0px;
 	
+	}
+
+	#parra .content-parra{
+
+		display: flex;
+		flex-direction: row;
 	}
 
 	#parra p {
@@ -352,11 +360,54 @@ body {
 
 
 	#lugares {
-		display: flex;
-		align-items: stretch;
 		padding: 0 4px;
+	}
 
-		
+	#lugares .content-lugares {
+		display: grid;
+          grid-auto-rows: 200px;
+          grid-gap: 1rem;
+          grid-auto-flow: row dense;
+	}
+	#lugares .content-lugares a {
+		display: block;
+		/*box-sizing: border-box;
+		flex: 33.3333%;
+  		max-width: 33.3333%;*/
+	}
+
+#lugares .content-lugares a:nth-child(11n+1) {
+  grid-column: span 1;
+}
+
+#lugares .content-lugares a:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+#lugares .content-lugares a:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+#lugares .content-lugares a:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+#lugares .content-lugares a:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#lugares .content-lugares a:nth-child(11n+9) {
+  grid-row: span 3;
+}
+
+	#lugares .content-lugares a img{
+		width: 100%;
+  height: 100%;
+  object-fit: cover;
 	}
 
 	#lugares figure {
@@ -371,22 +422,8 @@ body {
         vertical-align: middle;
 	}
 
-	#lugares img.lima {
-		flex-grow: 3.5;
-		
-	}
 
 
-
-	#lugares img.loreto {
-		flex-grow: 3;
-		
-	}
-
-	#lugares img.cusco {
-		flex-grow: 3.5;
-
-	}
 
 	/*segundo*/ 
 
@@ -401,14 +438,11 @@ body {
 
 }
 /*HECHO POR ANTONY*/
-body {/**** Cuerpo principal ****/
-    background: rgb(34, 46, 45);
-}
+
 #encabezado {
     height: 40px;
 	width: 96%;
     padding: 20px 2%;
-    background: rgb(40, 46, 38);
 }
 #brand {/*Caja de la imagen*/
     float: left;
@@ -424,15 +458,32 @@ body {/**** Cuerpo principal ****/
     width: 70%;
     height: 90%;
 }
+#cbyb { 
+	position: relative;
+}
+#cbyb input {
+	width: 200px;
+	border-radius: 15px;
+	padding: 6px 15px;
+	border: 1px solid #ddd;
+}
+#cbyb button {
+	position: absolute;
+	background: none;
+	border: none;
+	right: 8px;
+	top: 5px;
+}
+#cbyb button img{
+	height: 15px;
+}
 .bym {/*clase-para el margen del menu y buscador*/
     margin: 4px;
     float: left;
 }
 #miBusqueda {
-    background: #315e33;
     height: 100%;
     text-align: center;
-    width: 50%;
 }
 /*#boton {
     background: #151515;
