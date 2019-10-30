@@ -419,28 +419,10 @@ body {/**** Cuerpo principal ****/
     margin-top: -8px;
 
 }
-#buscYMenu {/*Aqui esta el buscador y el menu*/
-    float: right;
-    width: 70%;
-    height: 90%;
-}
 .bym {/*clase-para el margen del menu y buscador*/
     margin: 4px;
     float: left;
 }
-#miBusqueda {
-    background: #315e33;
-    height: 100%;
-    text-align: center;
-    width: 50%;
-}
-/*#boton {
-    background: #151515;
-    height: 100%;
-    width: 10%;
-    margin-top: -8px;
-
-}*/
 #menu {/*Aqui se diseña solo el menu*/
 	width: 50px;
 	height: 100%;
@@ -476,10 +458,57 @@ body {/**** Cuerpo principal ****/
 .men-mobile ul li a:hover {
 	color: rgb(35, 68, 64);
 }
-/*CONTENIDO*/
-#contenido {
-    width: 100%;
-    height: 300px; 
+/*Buscador*/
+#bus {
+	width: 100%;
+}
+#bus img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#cbyb {
+	position: absolute;
+	top: 55%;
+	left: 20%;
+	height: 40px;
+	width: 60%;
+}
+#miBusqueda {
+    background: #21dfd6;
+    height: 100%;
+    text-align: center;
+	width: 50%;
+	/**/
+	width: 100%;
+    height: 60px;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    padding: 0 20px;
+    font-size: 18px;
+    box-shadow: 1px 1px 1px rgba(236, 23, 23, 0.1);
+    padding-left: 62px;
+    border-radius: 3px;
+	line-height: normal;
+	position: relative;
+	/**/
+}
+#boton {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
+#buscYMenu {/*Aqui esta el buscador y el menu*/
+    float: right;
+    width: 70%;
+    height: 90%;
+}
+.byb {
+	opacity: 0.5;
 }
 /*REDES SOCIALES*/
 
