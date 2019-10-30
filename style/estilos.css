@@ -498,4 +498,25 @@ body {/**** Cuerpo principal ****/
     display: block;
     margin: 0 auto;
 }	
+@media screen and (min-width:1000px) {
+	#menu {
+		display: none;
+	}
+	#brand {
+		float: left;
+	}
+	#encabezado ul {
+		display: flex;
+		float: right;
+		width: 70%;
+	}
+	#encabezado ul li {
+		flex: 1;
+		list-style: none;
+	}
+	#encabezado ul li a {
+		text-decoration: none;
+		color: white;
+	}
 
+}

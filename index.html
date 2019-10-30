@@ -6,28 +6,34 @@
 	<link rel="stylesheet" type="text/css" href="style/estilos.css">
 </head>
 <body>
-	<div id="nav-mobile" class="nav-mobile ">
-		<ul>
-			<li><a href="/">Inicio</a></li>
-			<li><a href="/about">Acerca de nosotros</a></li>
-			<li><a href="/#contact">Contáctanos</a></li>
-		</ul>
-	</div>
-    <header id="nav">
-		<div id="brand">
-			<img src="img/logotravel.png">
+	<div id="men-mobile" class="men-mobile">
+        <ul>
+            <li><a href="/">Incio</a></li>
+            <li><a href="/about">Acerca de nosotros</a></li>
+            <li><a href="/#contact">Contacto</a></li>
+        </ul>
+    </div>
+    <header id="encabezado">
+        <div id="brand">
+            <a href="index.html"><img id="logo" src="img/logotravel.png"></a>
 		</div>
 		<ul>
-			<li><a href="/"><p>Inicio</p></a></li>
-			<li><a href="/about">Acerca de nosotros</a></li>
-			<li><a href="/#contact">Contáctanos</a></li>
-		</ul>
-		<div id="mobile" onclick="navEffect()">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</header>
+            <li><a href="/">Incio</a></li>
+            <li><a href="/about">Acerca de nosotros</a></li>
+            <li><a href="/#contact">Contacto</a></li>
+        </ul>
+        <div id="buscYMenu">
+            <div id="cbyb" class="bym">
+                <input placeholder="Search..." class="byb" type="search" id="miBusqueda" name="q">
+                <button id="boton" class="byb">Buscar</button>
+            </div>
+            <div class="bym" id="menu" onclick="navEffect()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
 	<section id="parra">
 		<div>
 			<p>
@@ -95,6 +101,6 @@
 			</figure>
 		</a>
 	</section>
-	<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/travel.js"></script>
 </body>
 </html>
