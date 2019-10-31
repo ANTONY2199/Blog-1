@@ -7,6 +7,7 @@ body {
 	height: 40px;
 	width: 96%;
 	padding: 20px 2%;
+
 }
 
 #brand img{
@@ -66,7 +67,9 @@ body {
 	margin-top: 35px; 
 	padding: 15px 0px;
 	
+	
 }
+
 
 #parra p {
 	display: block;
@@ -98,77 +101,65 @@ body {
 /*lugares*/
 
 #lugares {
-	width: 100%;
-	margin: 20px 0px;
-	position: relative;
-	top: 20px;
-    
-}
-
-#lugares figure {
 	margin: 0;
-	
+	padding: 0;
+	box-sizing: border-box;
+	margin-bottom: 30px;
 }
 
-#lugares figure .nombre {
-	background: rgba(49, 49, 49, 0.6);
-	color: white;
-	padding: 8px 0px;
-	font-size: 12px;
-	position: relative;
-	top: -40px;
+#lugares .galeria {
 	font-family: Calibri;
-	font-size: 20px;
-	display: block;
-	text-align: center;
-	cursor: pointer;
 }
 
-#lugares img {
-	width: 100%;
+#lugares .galeria .contenedor-imagenes {
 	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	padding-right: 0;
-	cursor: pointer;
+	width: 98%;
+	margin: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius: 3px;
+	margin-top: 30px;
 }
 
-#lugares1 {
-	width: 100%;
-	margin: 20px 0px;
+#lugares .galeria .contenedor-imagenes .imagen {
+	width: 80%;
 	position: relative;
-	top: 20px;
-    
+	height: 250px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
-#lugares1 figure {
-	margin: 0;
-	
+#lugares .galeria .contenedor-imagenes .imagen img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-#lugares1 figure .nombre {
-	background: rgba(49, 49, 49, 0.6);
+#lugares .galeria .contenedor-imagenes .imagen .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+} 
+#lugares .galeria .contenedor-imagenes .imagen .overlay h2 {
 	color: white;
-	padding: 8px 0px;
-	font-size: 12px;
-	position: relative;
-	top: -40px;
-	font-family: Calibri;
-	font-size: 20px;
-	display: block;
+	font-weight: 300;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	text-align: center;
-	cursor: pointer;
+	transform: translate(-50%, -50%);
 }
 
-#lugares1 img {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	padding-right: 0;
+#lugares .galeria .contenedor-imagenes .imagen:hover .overlay {
+	height: 100%;
 	cursor: pointer;
 }
-
 /*segundo*/
 
 #cajas .option {
@@ -228,19 +219,40 @@ body {
 	cursor: pointer;
 }
 
+
+
+@media screen and (min-width:450px) {
+
+
+	#lugares .galeria .contenedor-imagenes{
+        width: 90%;
+    }
+    #lugares .galeria .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+
+}
+
 @media screen and (min-width:800px) {
 
 	#mobile {
-		display: none;
+	    display: none;
 	}
 
 	#brand {
 		float: left;
 	}
 
+    #nav1 {
+    	display: flex;
+    	justify-content: center;
+    }
+
 	#nav {
 		display: flex;
 		flex-direction: row;
+		width: 1280px;
+
 	}
 
 	#nav ul{
@@ -275,7 +287,7 @@ body {
 
 	#parra {
 		display: flex;
-		flex-direction: row;
+	    justify-content: center;
 		background: silver;
 		width: 100%;
 		margin-top: 35px; 
@@ -308,84 +320,8 @@ body {
 		margin: 20px;
 	}
 
-@media screen and (min-width:500px){
-	
-	#lugares1 {
-		display: flex;
-		align-items: flex-end;
-		padding: 0 4px;
-		position: relative;
-		top: -160px;
-		
-	}
-
-	#lugares1 figure {
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-
-
-
-	#lugares1 img {
-		margin-top: 8px;
-        vertical-align: middle;
-	}
-
-	#lugares1 img.lamba {
-		flex-grow: 3.5;
-		
-	}
-
-
-
-	#lugares1 img.ica {
-		flex-grow: 3;
-		
-	}
-
-	#lugares1 img.arequipa1 {
-		flex-grow: 3.5;
-
-	}
-
-
-	#lugares {
-		display: flex;
-		align-items: stretch;
-		padding: 0 4px;
-
-		
-	}
-
-	#lugares figure {
-		display: block;
-		margin: 0 auto;
-		width: 100%
-		
-	}
-
-	#lugares img {
-		margin-top: 8px;
-        vertical-align: middle;
-	}
-
-	#lugares img.lima {
-		flex-grow: 3.5;
-		
-	}
-
-
-
-	#lugares img.loreto {
-		flex-grow: 3;
-		
-	}
-
-	#lugares img.cusco {
-		flex-grow: 3.5;
-
+	#lugares .galeria .contenedor-imagenes {
+		width: 95%
 	}
 
 	/*segundo*/ 
@@ -398,12 +334,24 @@ body {
 	#cajas .option  {
 		width: 33.3%;
 	}
+	
+ }
 
+@media screen and (min-width:1000px){
+
+
+	#lugares .galeria .contenedor-imagenes {
+        width: 85%;
+    }
+
+    #lugares .galeria .contenedor-imagenes .imagen {
+        width: 32%;
+    }
 }
+
+
 /*HECHO POR ANTONY*/
-body {/**** Cuerpo principal ****/
-    background: rgb(34, 46, 45);
-}
+
 #encabezado {
     height: 20px;
 	width: 96%;
@@ -423,6 +371,7 @@ body {/**** Cuerpo principal ****/
     margin: 4px;
     float: left;
 }
+
 #menu {/*Aqui se diseña solo el menu*/
 	width: 50px;
 	height: 100%;
@@ -458,18 +407,22 @@ body {/**** Cuerpo principal ****/
 .men-mobile ul li a:hover {
 	color: rgb(35, 68, 64);
 }
+
 /*Buscador*/
 #bus {
 	width: 100%;
+	position: relative;
+	
+
 }
 #bus img {
 	width: 100%;
 	height: 100%;
-	position: relative;
+	
 }
 #cbyb {
 	position: absolute;
-	top: 55%;
+	top: 40%;
 	left: 20%;
 	height: 40px;
 	width: 60%;
@@ -494,6 +447,7 @@ body {/**** Cuerpo principal ****/
 	position: relative;
 	/**/
 }
+
 #boton {
 	height: 60px;
 	width: 60px;
@@ -510,6 +464,7 @@ body {/**** Cuerpo principal ****/
 .byb {
 	opacity: 0.5;
 }
+
 /*REDES SOCIALES*/
 
 
@@ -533,25 +488,4 @@ body {/**** Cuerpo principal ****/
     padding: 10px;
 
 }	
-@media screen and (min-width:1000px) {
-	#menu {
-		display: none;
-	}
-	#brand {
-		float: left;
-	}
-	#encabezado ul {
-		display: flex;
-		float: right;
-		width: 70%;
-	}
-	#encabezado ul li {
-		flex: 1;
-		list-style: none;
-	}
-	#encabezado ul li a {
-		text-decoration: none;
-		color: white;
-	}
 
-}
