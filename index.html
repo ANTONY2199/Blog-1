@@ -13,21 +13,30 @@
 			<li><a href="/#contact">Contáctanos</a></li>
 		</ul>
 	</div>
-    <header id="nav">
-		<div id="brand">
-			<img src="img/logotravel.png">
+    <div id="nav1">
+    	<header id="nav">
+			<div id="brand">
+				<img src="img/logotravel.png">
+			</div>
+			<ul>
+				<li><a href="/"><p>Inicio</p></a></li>
+				<li><a href="/about">Acerca de nosotros</a></li>
+				<li><a href="/#contact">Contáctanos</a></li>
+			</ul>
+			<div id="mobile" onclick="navEffect()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</header>
+    </div>
+    <section id="bus">
+		<div><img src="img/fondo.jpg" id="imgPrin" ></div>
+		<div id="cbyb" class="bym">
+			<input placeholder="Search..." class="byb" type="search" id="miBusqueda" name="q">
+			<button id="boton" class="byb">Buscar</button>
 		</div>
-		<ul>
-			<li><a href="/"><p>Inicio</p></a></li>
-			<li><a href="/about">Acerca de nosotros</a></li>
-			<li><a href="/#contact">Contáctanos</a></li>
-		</ul>
-		<div id="mobile" onclick="navEffect()">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</header>
+	</section>
 	<section id="parra">
 		<div>
 			<p>
@@ -43,57 +52,60 @@
 		    </div>
 		</div>
 	</section>
-	<section id="lugares34">
-		<a href="segundo.html">
-			<figure>
-				<img class="lima" src="img/lima1.jpg" >
-				<div class="nombre">
-					Lima
+
+	<section id="lugares">
+		<div class="galeria">
+			<div class="contenedor-imagenes">
+				<div class="imagen">
+					<img src="img/lima.jpg">
+					<a href="segundo.html">
+						<div class="overlay">
+							<h2>LIMA</h2>
+						</div>
+					</a>
+				</div>	
+				<div class="imagen">
+					<img src="img/arequipa.jpg">
+					<a href="segundo.html">
+						<div class="overlay">
+							<h2>AREQUIPA</h2>
+						</div>
+					</a>
 				</div>
-			</figure>
-		</a>
-		<a href="segundo.html">
-			<figure>
-				<img class="loreto" src="img/loreto.jpg" >
-				<div class="nombre">
-					Loreto
+				<div class="imagen">
+					<img src="img/ica.jpg">
+					<a href="segundo.html">
+						<div class="overlay">
+							<h2>ICA</h2>
+						</div>
+					</a>
 				</div>
-			</figure>
-		</a>
-		<a href="segundo.html" >
-			<figure>
-				<img class="cusco" src="img/cusco.jpg">
-				<div class="nombre">
-					Cusco
+				<div class="imagen">
+					<img src="img/lambayeque.jpg">
+					<a href="segundo.html">
+						<div class="overlay">
+							<h2>LAMBAYEQUE</h2>
+						</div>
+					</a>
 				</div>
-			</figure>
-		</a>
-	</section>	
-	<section id="lugares1" >	
-		<a href="segundo.html" >
-			<figure>
-				<img class="arequipa" src="img/lamba.jpg">
-				<div class="nombre">
-					Lambayeque
+				<div class="imagen">
+					<img src="img/loreto.jpg">
+					<a href="segundo.html">
+						<div class="overlay">
+							<h2>LORETO</h2>
+						</div>
+					</a>
 				</div>
-			</figure>
-		</a>
-		<a href="segundo.html" >
-			<figure>
-				<img class="ica" src="img/ica.jpg">
-				<div class="nombre">
-					Ica
+				<div class="imagen">
+					<img src="img/cusco.jpg">
+					<a href="segundo.html">
+						<div class="overlay">
+							<h2>CUSCO</h2>
+						</div>
+					</a>
 				</div>
-			</figure>
-		</a>
-		<a href="segundo.html" >
-			<figure>
-				<img class="cusco" src="img/arequipa1.jpg">
-				<div class="nombre">
-					Arequipa
-				</div>
-			</figure>
-		</a>
+			</div>
+		</div>
 	</section>
 	<script type="text/javascript" src="js/nav.js"></script>
 </body>

@@ -253,12 +253,13 @@ body {
 /*segundo*/
 
 #cajas .option {
+	height: 600px;
 
 }
 
 #cajas .option figure {
 	margin: 0;
-	
+	height: 600px;
 }
 
 
@@ -472,7 +473,7 @@ body {
 	/*segundo*/ 
 
 	#cajas {
-		display: flex;
+		display: inline-flex;
 		align-items: stretch;
 	}
 
@@ -486,12 +487,9 @@ body {
 #redes {
     width: 100%;
     height: 50px;
-    margin: 0 auto;
+	margin: 0 auto;
+	display: flex;
 }
-#redes div {
-    float: left;
-    margin: 0 auto;
-    display: block;
 }
 #face {
     cursor: pointer;
