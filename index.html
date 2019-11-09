@@ -32,10 +32,10 @@
     </div>
     <section id="bus">
 		<div><img src="img/fondo.jpg" id="imgPrin" ></div>
-		<div id="cbyb" class="bym">
-			<input placeholder="Search..." class="byb" type="search" id="miBusqueda" name="q">
-			<button id="boton" class="byb">Buscar</button>
-		</div>
+		<form id="cbyb" class="bym" onsubmit="search(event)">
+			<input placeholder="Search..." class="byb" type="search" id="miBusqueda" name="searchText">
+			<button id="boton" class="byb" type="submit">Buscar</button>
+		</form>
 	</section>
 	<section id="parra">
 		<div>
@@ -55,55 +55,8 @@
 
 	<section id="lugares">
 		<div class="galeria">
-			<div class="contenedor-imagenes">
-				<div class="imagen">
-					<img src="img/lima.jpg">
-					<a href="segundo.html">
-						<div class="overlay">
-							<h2>LIMA</h2>
-						</div>
-					</a>
-				</div>	
-				<div class="imagen">
-					<img src="img/arequipa.jpg">
-					<a href="segundo.html">
-						<div class="overlay">
-							<h2>AREQUIPA</h2>
-						</div>
-					</a>
-				</div>
-				<div class="imagen">
-					<img src="img/ica.jpg">
-					<a href="segundo.html">
-						<div class="overlay">
-							<h2>ICA</h2>
-						</div>
-					</a>
-				</div>
-				<div class="imagen">
-					<img src="img/lambayeque.jpg">
-					<a href="segundo.html">
-						<div class="overlay">
-							<h2>LAMBAYEQUE</h2>
-						</div>
-					</a>
-				</div>
-				<div class="imagen">
-					<img src="img/loreto.jpg">
-					<a href="segundo.html">
-						<div class="overlay">
-							<h2>LORETO</h2>
-						</div>
-					</a>
-				</div>
-				<div class="imagen">
-					<img src="img/cusco.jpg">
-					<a href="segundo.html">
-						<div class="overlay">
-							<h2>CUSCO</h2>
-						</div>
-					</a>
-				</div>
+			<div class="contenedor-imagenes content-places-print">
+				
 			</div>
 		</div>
 	</section>
