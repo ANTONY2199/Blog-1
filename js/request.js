@@ -61,4 +61,4 @@ $( document ).ready( () => {
 	const ACCOUNT_OBJ = new AccountGihub('https://api.github.com/users/jbmarflo')
 	ACCOUNT_OBJ.printData()
 }) 
-	
+
